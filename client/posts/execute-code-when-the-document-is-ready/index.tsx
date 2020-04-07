@@ -12,7 +12,7 @@ const ready = function(cb) {
     (document.readyState === 'loading')
         ? document.addEventListener('DOMContentLoaded', function(e) {
             cb();
-        });
+        })
         : cb()
 };
 
